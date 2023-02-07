@@ -1,0 +1,23 @@
+.container {
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.container .containerChid, .container .containerTwo {
+  height: 300px;
+  width: 300px;
+  background: rgba(255, 0, 0, 0.148);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .containerChid p, .container .containerTwo p {
+  font-style: italic;
+  font-family: segoe ui;
+  font-weight: bold;
+  color: rgb(39, 173, 39);
+}/*# sourceMappingURL=index.css.map */

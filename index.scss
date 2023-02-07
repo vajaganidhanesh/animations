@@ -1,0 +1,36 @@
+@use 'variables';
+$bgColor:variables.$value1;
+@mixin bb {
+    font-style: italic;
+    font-family: segoe ui;
+    font-weight: bold;
+}
+
+.container{
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+
+    .containerChid{
+         height: 300px;
+         width: 300px;
+         background: $bgColor;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+        font:{
+            // family:'segoe UI';
+            // weight:bold
+        }
+        p{
+            @include bb;
+            color: variables.$value2;
+        }
+    }
+    .containerTwo{
+        @extend .containerChid
+    }
+}
